@@ -49,7 +49,7 @@ nav{
 nav li{
   color: white;
 }
-.active,nav li:hover{  /*Active portion of the navigation*/
+.active1,nav li:hover{  /*Active portion of the navigation*/
   color: orange;
 }
 
@@ -139,7 +139,9 @@ footer ul li:first-of-type{
   display: none;
 }
 
-
+.glider-next, .glider-prev {
+  position: relative !important;
+}
 
 /* Media Queries */
 @media (max-width: 600px){
@@ -164,6 +166,9 @@ footer ul li:first-of-type{
   .about .d-flex{
     display: block !important;
   }
+  .about .mr-5{
+    margin-right: 0 !important;
+  }
   .about img{
     width: 100%;
   }
@@ -173,6 +178,23 @@ footer ul li:first-of-type{
   /* Main Content */
   main ul{
     justify-content: start;
+  }
+  /* Testimonials */
+  .testimonals{
+    padding: 5% 0;
+  }
+  .testimonals img{
+    width: 50%;
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: auto;
+}
+.testimonals .pr-5{
+  padding-right: 0 !important;
+}
+  .testimonals .p-5{
+    padding: 3rem 1.5rem!important;
   }
   /* Footer */
   .row{
