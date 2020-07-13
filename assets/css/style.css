@@ -144,20 +144,26 @@ footer ul li:first-of-type{
 }
 
 /* Media Queries */
+@media (max-width: 700px){
+  .open{
+    display: block;
+  }
+  /* Nav-bar */
+  nav{
+    padding: 15px 7%;
+  }
+  nav .d-flex{
+    display: none !important;
+  }
+}
 @media (max-width: 600px){
   .d-none{
     display: none !important;
   }
-  .open{
-    display: block;
-  }
   .d-flex{
     flex-wrap: wrap !important;
   }
-  /* Nav-bar */
-  nav .d-flex{
-    display: none !important;
-  }
+  
   /* Header */
   header h1{
     font-size: xx-large;
@@ -173,7 +179,7 @@ footer ul li:first-of-type{
     width: 100%;
   }
   .about .ml-5{
-    margin: 20px !important;
+    margin: 20px 0px !important;
   }
   /* Main Content */
   main ul{
