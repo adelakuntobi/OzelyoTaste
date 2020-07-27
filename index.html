@@ -25,16 +25,18 @@
   <header>
     <img class="position-absolute" src="./assets/images/Rectangle 1.png">
     <nav class="d-flex">
-      <span class="mt-auto ml-0 mb-auto mr-auto" id="logo"><span class="active1">Ozelyo</span>Taste</span>
-      <ul class="d-none d-flex mt-auto mr-0 mb-auto ml-auto">
+      <section class="d-flex">
+        <span class="mt-auto ml-0 mb-auto mr-auto" id="logo"><span class="active1">Ozelyo</span>Taste</span>
+        <span class="open mt-auto mr-3 mb-auto ml-auto displayNone" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </section>
+      <ul id="mySidenav" class="display-flex mt-auto mr-0 mb-auto ml-auto">
         <li class="active1">Home</li>
         <li>About Us</li>
         <li>Menu</li>
         <li>Order</li>
         <li>Contact</li>
       </ul>
-      <span class="open mt-auto mr-3 mb-auto ml-auto displayNone" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </nav>
+   </nav>
     <div class="mb-5 text-center">
       <h1>Ozelyo_Taste</h1>
       <p>Creating delicious memories</p>
@@ -45,13 +47,13 @@
 
     <div class="about d-flex">
       <img data-aos="fade-right" data-aos-duration="1000" class="mr-5" src="./assets/images/Rectangle 2.png" alt="About Ozelyo Taste">
-      <section data-aos="fade-rigth" data-aos-duration="1000" class="mt-auto mb-auto ml-5">
+      <section data-aos="fade-right" data-aos-duration="1000" class="mt-auto mb-auto ml-5">
         <h3 class="active1 mb-5">About Ozelyo_Taste</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
     </div>
 
-    <main>
+    <main class="overflow-hidden">
     <div class="text-center">
       <h3 class="active1 mb-5">Our Menu</h3>
       <ul class="mb-5 p-0 d-flex">
@@ -174,8 +176,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   <script src="./assets/js/main.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

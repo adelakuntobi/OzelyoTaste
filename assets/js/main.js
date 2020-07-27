@@ -35,4 +35,17 @@ window.addEventListener('load', function(){
   })
 })
 
+function openNav() {
+  document.getElementById("mySidenav").style.transition = "all .5s ease-in-out"
+  if(document.getElementById("mySidenav").style.display === "block"){
+    document.getElementById("mySidenav").style.display = "none";
+  }
+  else{
+    document.getElementById("mySidenav").style.display = "block";
+  }
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
 
